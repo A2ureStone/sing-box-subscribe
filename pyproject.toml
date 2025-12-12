@@ -2,6 +2,7 @@
 name = "sing-box-subscribe"
 version = "1.0.0"
 description = "sing-box subscription tool"
+requires-python = ">=3.8,<3.12" 
 dependencies = [
     "requests",
     "paramiko",
