@@ -7,5 +7,11 @@
     "rewrites": [
         { "source": "/(.*)", "destination": "/api/app" }
     ],
-    "outputDirectory": "tmp"
+    "outputDirectory": "tmp",
+    "build": {
+        "env": {
+          "PYTHON_PACKAGE_MANAGER": "pip",
+          "ENABLE_PYPA_PIP": "true"
+        }
+      }
 }
