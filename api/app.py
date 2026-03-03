@@ -70,6 +70,10 @@ def index():
     temp_json_data = get_temp_json_data()
     return render_template('index.html', template_options=template_options, providers_data=json.dumps(providers_data, indent=4, ensure_ascii=False), temp_json_data=json.dumps(temp_json_data, indent=4, ensure_ascii=False))
 
+@app.route('/hello')
+def hello():
+    return 'Hello, World!'
+
 @app.route('/update_providers', methods=['POST'])
 def update_providers():
     try:
